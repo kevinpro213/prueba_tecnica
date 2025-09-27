@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>{{ form.vars.value.id ? 'Editar Producto' : 'Nuevo Producto' }}</h1>
+{{ form_start(form) }}
+{{ form_widget(form, {'attr': {'class': 'form-control'}}) }}
+<button class="btn btn-primary mt-2">Guardar</button>
+{{ form_end(form) }}
+{% endblock %}
